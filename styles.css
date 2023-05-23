@@ -110,3 +110,8 @@ blockquote {
   flex-direction: column;
   justify-content: center; */
 }
+
+.back-to-top {
+  position: fixed;
+  color: blueviolet;
+}
