@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 20px;
+}
+
+header {
+  background-color: white;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: rgb(72,81,90)
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#logo-img {
+  width: 100px;
+  height: 70px;
+  display: block;
+  margin-right: 20px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+blockquote {
+  margin: 20px;
+  padding: 10px;
+  border-left: 3px solid #333;
+  font-style: italic;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+#service {
+  width: 300px;
+  /* width: 300px;
+  height: 300px;
+  margin: 10px; */
+  /* border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+
+}
+
+#about_us {
+  /* width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
