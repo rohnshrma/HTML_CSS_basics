@@ -146,17 +146,6 @@ h2 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
-/* h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-} */
-
 p {
   display: block;
   margin-block-start: 2em;
@@ -179,12 +168,3 @@ h3 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-
-/* .gallery-item {
-            display: inline-block;
-            margin: 10px;
-        }
-
-        .gallery-item img {
-            max-width: 300px;
-        } */

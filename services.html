@@ -29,12 +29,9 @@
         }
     </style>
 </head>
-
 <body class="sabio" data-ins="pw-06-EventHandlers" data-ui="full-height" data-ins-css="false">
-    <!-- Do Not Edit or Remove this nav element -->
-    <nav class="do-not-remove navbar navbar-expand-md navbar-dark bg-dark sabio"></nav>
-
-    <div class="container main">
+<nav class="do-not-remove navbar navbar-expand-md navbar-dark bg-dark sabio"></nav>
+ <div class="container main">
         <div class="row my-4 align-content-center text-center">
             <div class="col-md-4">
                 <button type="submit" class="btn btn-primary btn-lg" id="alpha">Alpha</button>
@@ -46,18 +43,12 @@
                 <button type="button" class="btn btn-primary btn-lg gamma" id="gamma">Gamma</button>
             </div>
         </div>
-
-        <section id="members-container">
+      <section id="members-container">
             <h1 id="childNotifications">Notifcations from any descendants</h1>
             <div class="row my-4 align-content-center text-center ">
                 <div id="msg" class="col"></div>
             </div>
-
             <div class="row team-members">
-
-
-
-                <!-- Team Member 1 -->
                 <div class="col-xl-3 col-md-6 mb-4">
                     <div class="card shadow">
                         <img src="https://i.pravatar.cc/400?img=48" class="card-img-top item" alt="...">
@@ -69,7 +60,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 2 -->
                 <div class="col-xl-3 col-md-6 mb-4">
                     <div class="card shadow">
                         <img src="https://i.pravatar.cc/300" class="card-img-top item" alt="...">
@@ -82,7 +72,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 3 -->
                 <div class="col-xl-3 col-md-6 mb-4">
                     <div class="card shadow">
                         <img src="https://i.pravatar.cc/400?img=7" class="card-img-top item" alt="...">
@@ -94,7 +83,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Team Member 4 -->
                 <div class="col-xl-3 col-md-6 mb-4">
                     <div class="card shadow">
                         <img src="https://picsum.photos/400?grayscale" class="card-img-top item" alt="...">
@@ -142,10 +130,8 @@
               <p class="gallery img">
                 <img src="images/img_03.jpg" alt="expresso coffee" />
               </p>
-              <!-- <p class="product_01">Popular espresso beverages</p> -->
               <br />
             </div>
-    
             <div class="gallery img">
               <h3 class="product_text_box ">Two Chairs & One Umbrella</h3>
               <h2><li>Full Day $80</li>
@@ -154,11 +140,9 @@
                 <img src="images/img-01.jpg" class="gallery img" alt="blended coffee drinks" />
               </p>
               <button type="button" class="btn btn-primary btn-lg gamma" id="gamma">Gamma</button>
-              <!-- <p class="product_01">Delicious icy blends</p> -->
               <br />
             </div>
-    
-            <div class="gallery img">
+         <div class="gallery img">
               <p><h3 class="product_text_box">Four Chairs & Two Umbrellas</h3>
                 <h2><li>Full Day $180</li>
                   <li>Beach Delivery and pick up fee: $50</li></h2>
@@ -170,36 +154,14 @@
                   class="product_01"
                 />
               </p>
-              <!-- <p class="product_01">Muffins, bagels and more</p> -->
               <br />
             </div>
-    
             <br />
             <br />
           </section>
     </main>
     <footer class="footer">
       <figure>
-        <!-- <div class='buttons-container'>
-          <div class='button facebook'>
-            <i class="fab fa-facebook-f fa-2x"></i>
-          </div>
-          <div class='button twitter'>
-            <i class="fab fa-twitter fa-2x"></i>
-          </div>
-          <div class='button github'>
-            <i class="fab fa-github fa-2x"></i>
-          </div>
-          <div class='button instagram'>
-            <i class="fab fa-instagram fa-2x"></i>
-          </div>
-          <div class='button codepen'>
-            <i class="fab fa-codepen fa-2x"></i>
-          </div>
-          <div class='button reddit'>
-            <i class="fab fa-reddit fa-2x"></i>
-          </div>
-        </div> -->
         <img src="images/Social_Buttons-PhotoRoom-PhotoRoom.png" class="social_logos" alt="social icons">
         </figure>
       <p><a href="#" class="back-to-top">Back to Top</a></p>
@@ -214,69 +176,12 @@
   </div>
   <script id="candidateCode">
 
-
-    /**Create a declared function called wireUpHandlers
-    Create a declared function called startUp
-    The startUp function should register all event handlers 
-    needed on this page by calling the wireUpHandlers
-    
-    Create a declared function called onAlphaClicked that will 
-    be used as an event handler
-    onAlphaClicked function should contain a parameter named e
-    In the onAlphaClicked function, stop the default behavior of the Event
-    In the onAlphaClicked function log to the console the word alpha
-    
-    Create a declared function called onBetaClicked
-    onBetaClicked function should contain a parameter named e
-    In the onBetaClicked function, stop the default behavior of the Event
-    In the onBetaClicked function log to the console the word beta
-    
-    Create a declared function called onGammaClicked
-    onGammaClicked function should contain a parameter named e
-    In the onGammaClicked function, stop the default behavior of the Event
-    In the onGammaClicked function log to the console the word gama
-    
-    **Selecting a Profile and Showing Message**
-    Create a declared function called showMessage
-    The showMessage function should contain two parameters 
-    called elementId and isSelected
-    The showMessage should concatenate the two parameters of elementId 
-    and isSelected into 1 string AND....
-    ... change the html of the element with the id of msg to this string
-    
-    Create a declared function called onProfileSelected
-     An element is said to be selected when the card element containing 
-     it has the class of isSelected. This is what a selected card should 
-     look like. Notice the red border.
-     Any time this function is invoked, the enclosing card's state 
-     of isSelected will be toggled.
-    onProfileSelected function should contain a parameter named e
-    onProfileSelected function should run on click of #cmdClick
-    onProfileSelected function should run on mouseover and mouseout 
-    of #cmdMouse
-    onProfileSelected function should run on dblclick of #cmdDoubleClick
-    onProfileSelected function should run on click of #cmdCtrl but only 
-    do perform the actions described if the user is holding down the CTRL key
-    Any time onProfileSelected is Invoke you should invoke showMessage 
-    with Id of the element and a value indicating if the action left the 
-    element selected (true) or not (false). 
-    
-    Event Delegation
-    Create a declared function called onChildClicked
-    onChildClicked function should contain a parameter named e
-    The element with id of members-container should be wired up 
-    to fire the onChildClicked function on click, but only when the element being clicked is a descendant with a class of item
-     Review the concept of Event Delegation from the course.**/ 
-    
-    //Create a declared function called startUp
      function startUp()
     
      { 
-        wireUpHandlers() //calling the wireUpHandlers
+        wireUpHandlers() 
      }
      
-    
-     //Create a declared function called wireUpHandlers
      function wireUpHandlers()
         {
          $("#alpha").on("click", onAlphaClicked);
@@ -295,42 +200,30 @@
          $("#members-container").on("click", ".item", onChildClicked)
           
         }
-    
-    
-        // Create a declared function called onAlphaClicked that will be used as an event handler
-         function onAlphaClicked(e)//parameter named (e)
+        
+        function onAlphaClicked(e)
         {
-            console.log("alpha"); //log to the console the word alpha
-            e.preventDefault(); //stop the default behavior of the Event
+            console.log("alpha"); 
+            e.preventDefault(); 
+        }
+         function onBetaClicked(e)
+        {
+            console.log("beta");
+            e.preventDefault(); 
+        }
+    
+         function onGammaClicked(e)
+        {
+            console.log("gama");
+            e.preventDefault(); 
         }
         
-    
-         //Create a declared function called onBetaClicked
-         function onBetaClicked(e)//parameter named (e)
-        {
-            console.log("beta");//log to the console the word beta
-            e.preventDefault(); //stop the default behavior of the Event
-        }
-    
-         //Create a declared function called onGammaClicked
-         function onGammaClicked(e)//parameter named (e)
-        {
-            console.log("gama"); //log to the console the word gama
-            e.preventDefault(); //stop the default behavior of the Event
-        }
-        
-        // Create a declared function called showMessage
-        function showMessage(elementId, isSelected)//parameters called elementId and isSelected
+        function showMessage(elementId, isSelected)
         { 
             $("#msg").html(`${elementId} selected = ${isSelected}`);
             
         }
-    
-    
-    //SELECTING A PROFILE AND SHOWING MESSAGE 
-    
-    //Create a declared function called onProfileSelected
-        function onProfileSelected(e)//parameter named (e)
+         function onProfileSelected(e)
         {
             if (e.currentTarget.id === "cmdCtrl")
             {
@@ -350,9 +243,7 @@
     
         }
     
-        //EVENT DELEGATION 
-        //Create a declared function called onChildClicked
-        function onChildClicked(e)////parameter named (e)
+        function onChildClicked(e)
     
         {
             $("#childNotifications").text(`${e.currentTarget.tagName} was last clicked`)
