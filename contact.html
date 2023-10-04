@@ -1,42 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>contact</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <title>Contact</title>
   </head>
   <body>
-</html>
-    <div id="wrapper">
-      <header>
-        <nav class="nav-container">
-          <img
-            id="logo-img"
-            src="images/new_logo3.jpg"
-            alt="Header Image"
-            href="/"
-          />
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <h2>Contact Us</h2>
-        <a href="mailto:example@example.com" class="email-link">Email</a>
-      </main>
-      <footer class="footer">
-        <p><a href="#" class="back-to-top">Back to Top</a></p>
-        <br />
-        <address>
-          PO Box 34567<br />
-          San Diego, CA 92100<br />
-          <strong>info@beachbrossharing.com</strong>
-        </address>
-        <br />
-      </footer>
+       <!--navbar  -->
+<div class="nav">
+  <a class="logo" href="">Beach Bros Sharing</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+<!-- bootstrap contact form -->
+  <div id="main">
+    <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
+    <label for="floatingInputDisabled">Email address</label>
+  </div>
+  <div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" disabled></textarea>
+    <label for="floatingTextareaDisabled">Comments</label>
+  </div>
+  <div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled" style="height: 100px" disabled>Disabled textarea with some text inside</textarea>
+    <label for="floatingTextarea2Disabled">Comments</label>
+  </div>
+  <div class="form-floating">
+    <select class="form-select" id="floatingSelectDisabled" aria-label="Floating label disabled select example" disabled>
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <label for="floatingSelectDisabled">Works with selects</label>
+  </div>
+</div>
+
+    
+        <!-- <a href="mailto:example@example.com" class="email-link">Email</a> -->
+      
+     <!-- footer -->
+
+    <div id="footer" class="container">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      <a href=""><i class="fa-brands fa-snapchat"></i></a>
+      <p><a href="#" class="back-to-top">Back to Top</a></p>
+      <br />
+      <address>
+        PO Box 34567<br />
+        San Diego, CA 92100<br />
+        <strong>info@beachbrossharing.com</strong>
+      </address>
+      <br />
+      <p>&copy Copyright by Daniel</p>
+    </div>
     </div>
   </body>
 </html>
