@@ -13,11 +13,11 @@
        <!--navbar  -->
        <div class="nav">
         <img
+         class="logo"
           src="images/sharing_logo.png"
-          class="img-fluid-navlogo"
+         
           alt="sharing_logo"
         />
-        <a class="logo" href="home.html">Beach Bros Sharing</a>
         <ul>
           <li><a href="home.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -26,28 +26,30 @@
         </ul>
       </div>
 <!-- bootstrap contact form -->
-  <div id="main">
-    <div class="form-floating mb-3">
-    <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com" disabled>
-    <label for="floatingInputDisabled">Email address</label>
-  </div>
-  <div class="form-floating mb-3">
-    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled" disabled></textarea>
-    <label for="floatingTextareaDisabled">Comments</label>
-  </div>
-  <div class="form-floating mb-3">
-    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled" style="height: 100px" disabled>Disabled textarea with some text inside</textarea>
-    <label for="floatingTextarea2Disabled">Comments</label>
-  </div>
-  <div class="form-floating">
-    <select class="form-select" id="floatingSelectDisabled" aria-label="Floating label disabled select example" disabled>
-      <option selected>Open this select menu</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </select>
-    <label for="floatingSelectDisabled">Works with selects</label>
-  </div>
+  <div id="contact" >
+    <h2 class="level-2">Get In Touch</h2>
+    <form action="mailto:daniel@email.com?subject=Get In Touch" method="post" enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="Name" placeholder="Your Name">
+      </div>
+      <div class="form-group">      
+        <input type="email" name="Email Address" placeholder="Email Address">
+      </div>
+      <div class="form-group">
+        <textarea  cols="30" rows="10" name="Message" placeholder="Enter Message "></textarea>
+      </div>
+  
+    <div class="form-group">
+      <!-- <label for="floatingSelectDisabled">Works with selects</label> <br> -->
+      <select name="Number of boards" class="form-select">
+        <option selected>Open this select menu</option>
+        <option  value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
 </div>
 
     
@@ -71,5 +73,10 @@
       <p>&copy Copyright by Daniel</p>
     </div>
     </div>
+
+    <div class="top">
+      <a href="#contact"><i class="fa-sharp fa-solid fa-arrow-up fa-bounce"></i></a> 
+     </div>
+ 
   </body>
 </html>

@@ -3,6 +3,55 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+.level-4 {
+  font-size: 3.4rem;
+  margin-bottom: 1rem;
+
+  font-weight: 500;
+}
+
+
+.btn {
+  background-color: #333;
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-color: transparent;
+  margin: 1rem 1rem 0;
+}
+
+.btn-alt {
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-color: transparent;
+  margin: 1rem 1rem 0;
+}
+.level-2 {
+  font-size: 3.4rem;
+  margin-bottom: 1rem;
+
+  font-weight: 500;
+}
+
+.level-3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.container {
+  text-align: center;
+  padding: 6rem 8rem;
 }
 
 h1,
@@ -39,44 +88,37 @@ p {
 
 /* navbar all pages */
 .nav {
+  background-color: #01a4a2;
   display: flex;
   /* manage the vertical space */
   align-items: center;
   /* manage the horizontal space */
   justify-content: space-between;
-  padding: 4rem 12rem 0;
+  padding: 4rem 12rem;
+}
+
+.nav .logo{
+  width:10%;
 }
 .nav a {
   font-family: Arial, Helvetica, sans-serif;
-  color: #f91722;
+  color: #fff;
+  font-size: 18px;
+  margin-left:2rem;
   text-decoration: none;
-  padding-left: 12rem;
 }
 
-.nav a:hover {
+.nav ul li a:hover {
   transition: 0.3s ease-in-out;
   text-decoration-line: underline;
   text-decoration-color: #f91722;
 }
-.nav .nav-link {
-  font-size: 1.2rem;
-  margin: 0 0 0 2rem;
-}
-.nav .logo {
-  padding-left: 0.1rem;
-  text-shadow: -2px -2px 2px rgb(86, 72, 72);
-  font-size: 2rem;
-}
+
 .nav ul {
   list-style-type: none;
   display: flex;
 }
 
-.nav ul .nav-link:hover {
-  transition: 0.3s;
-  text-shadow: -1px -1px 1px #000;
-  transition: 0.3s ease-in-out;
-}
 
 /* footer css all pages */
 #footer i {
@@ -86,7 +128,7 @@ p {
 }
 
 #footer p {
-  margin-top: 1rem;
+  margin: 1rem 0 0;
 }
 
 /* index page css */
@@ -95,7 +137,7 @@ p {
   /* give the header a fixed height */
 
   /* viewport heights */
-  height: 85vh;
+  height: 90vh;
   /* background-color: #ffdb74; */
   background-color: #01a4a2;
   overflow: hidden;
@@ -104,13 +146,12 @@ p {
 #main {
   color: #fff;
   display: flex;
-  padding: 6rem 12rem;
+  padding: 0 12rem 4rem;
 }
 
 #main .content-bx h1 {
   font-size: 4rem;
   text-shadow: -2px -2px 2px #000;
-  font-family: Arial;
 }
 
 #main .content-bx {
@@ -121,7 +162,7 @@ p {
 }
 
 #main .img-bx img {
-  width: 55%;
+  width: 65%;
   position: relative;
   left: 120px;
   filter: drop-shadow(-2px -2px 2px #000);
@@ -139,37 +180,38 @@ p {
   align-items: center;
 }
 
-/* pricing section */
+/* ===========================================pricing section */
 
 #pricing_section .row {
-  margin-top: 1rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: space-evenly;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 #pricing_section .row .card {
   width: 25%;
-  /* border:1px solid #ccc; */
   box-shadow: 0 0 4px 0 #000;
 }
 
 #pricing_section .row .card .card-header {
-  background-color: #ccc;
-  padding: 1rem;
+  height:180px;
+ width:100%;
+ overflow: hidden;
+ border-bottom: 2px solid #ccc;
 }
+#pricing_section .row .card .card-header img {
+  height: 100%;
+ width:100%;
+}
+
 #pricing_section .row .card .card-body {
   padding: 1rem;
 }
-#pricing_section .row .card .card-header h3 {
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-}
+
 
 #pricing_section .row .card .card-body h3 {
   font-size: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 
@@ -177,85 +219,37 @@ p {
   margin: 1rem 0;
 }
 
-#pricing_section .row .card .card-body .btn-pricing {
-  border: 1px solid #000;
-  padding: 12px 14px;
-  border-radius: 4px;
+#pricing_section .row .card .card-body .btn {
   width: 100%;
-  background-color: transparent;
+  margin: 0;
 }
-#pricing_section .row .card .card-body .btn-alt-pricing {
-  border-color: transparent;
-  color: #fff;
-  padding: 12px 14px;
-  border-radius: 4px;
-  width: 100%;
-  background-color: black;
+#pricing_section .row .card .card-body .btn-alt {
+
+  border: 2px solid #000;
+  width:100%;
+  margin:0;
 }
 
-.level-4 {
-  font-size: 3.4rem;
-  margin-bottom: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-}
 
-.level-2 {
-  font-size: 3.4rem;
-  margin-bottom: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-}
 
-.level-3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.btn {
-  background-color: #333;
-  padding: 10px 12px;
-  border-radius: 4px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  border-color: transparent;
-  margin: 1rem;
-}
-
-.btn-alt {
-  background-color: white;
-  padding: 10px 12px;
-  border-radius: 4px;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  border-color: transparent;
-  margin: 1rem;
-}
-.container {
-  text-align: center;
-  padding: 4rem 8rem;
-}
 /* page index */
 #banner {
   background-color: #ffdb74;
 }
 
-.feature {
-  padding: 2rem 3rem;
-  padding-left: 10rem;
-}
 
 #features {
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+#features .feature{
+  width:25%;
 }
 
 #features i {
   font-size: 3rem;
-  color: #f91722;
+  color: #F8111B;
   margin-bottom: 0.5rem;
 }
 
@@ -265,9 +259,7 @@ p {
   width: 25%;
 }
 
-.img-fluid-navlogo {
-  width: 10%;
-}
+
 
 #about {
   /* padding: 4rem 8rem; */
@@ -290,10 +282,95 @@ p {
   justify-content: space-between;
   align-items: center;
   font-size: 2rem;
-  font-family: Arial;
+
 }
 
 /* contact page bootstrap form */
 .form-floating mb-3 {
   width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================contact page ======================================= */
+
+#contact{
+  text-align: center;
+  padding:2rem;
+  width:50%;
+  margin: 4rem auto;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 0 #333;
+  background: rgba(255,224,117,0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+
+#contact .form-group  input,
+#contact .form-group  select,
+#contact .form-group  textarea{
+  padding:10px 12px;
+  width:95%;
+  border-radius: 4px;
+  border:none;
+  box-shadow: 0 0 2px 0 #333;
+  margin-bottom: 1rem;
+}
+
+#contact .form-group  input:active,
+#contact .form-group  input:focus,
+#contact .form-group  textarea:active,
+#contact .form-group  textarea:focus{
+  outline:none;
+}
+#contact .form-group  select{
+  width:99%;
+}
+
+#contact button{
+  width:99%;
+  border-radius:4px;
+  border-color: transparent;
+  background-color: #01a4a2;
+  padding:10px 12px;
+  color:#fff;
+}
+
+
+/* =============================================================================================== */
+
+
+/* fixed button */
+.top{
+  height:50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 0 #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom:50px;
+  right:50px;
+  background: rgba(0,0,0,0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+.top a{
+  color:#000;
 }
