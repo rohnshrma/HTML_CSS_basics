@@ -36,6 +36,7 @@
   border-color: transparent;
   margin: 1rem 1rem 0;
 }
+
 .level-2 {
   font-size: 3.4rem;
   margin-bottom: 1rem;
@@ -62,6 +63,7 @@ h5,
 h6 {
   font-family: Montserrat;
 }
+
 p {
   color: grey;
   margin-bottom: 1rem;
@@ -77,6 +79,7 @@ p {
   border-color: transparent;
   background-color: #000;
 }
+
 .cta-btn-alt {
   color: #fff;
   font-size: 18px;
@@ -97,14 +100,15 @@ p {
   padding: 4rem 12rem;
 }
 
-.nav .logo{
-  width:10%;
+.nav .logo {
+  width: 10%;
 }
+
 .nav a {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 18px;
-  margin-left:2rem;
+  margin-left: 2rem;
   text-decoration: none;
 }
 
@@ -157,6 +161,7 @@ p {
 #main .content-bx {
   width: 50%;
 }
+
 #main .img-bx {
   width: 50%;
 }
@@ -169,6 +174,7 @@ p {
   /* rotate the image */
   transform: rotate(25deg);
 }
+
 #main:hover img {
   transition: 0.3s ease-in-out;
   transform: rotate(385deg);
@@ -195,14 +201,15 @@ p {
 }
 
 #pricing_section .row .card .card-header {
-  height:180px;
- width:100%;
- overflow: hidden;
- border-bottom: 2px solid #ccc;
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 2px solid #ccc;
 }
+
 #pricing_section .row .card .card-header img {
   height: 100%;
- width:100%;
+  width: 100%;
 }
 
 #pricing_section .row .card .card-body {
@@ -223,11 +230,12 @@ p {
   width: 100%;
   margin: 0;
 }
+
 #pricing_section .row .card .card-body .btn-alt {
 
   border: 2px solid #000;
-  width:100%;
-  margin:0;
+  width: 100%;
+  margin: 0;
 }
 
 
@@ -243,8 +251,9 @@ p {
   justify-content: space-evenly;
   align-items: baseline;
 }
-#features .feature{
-  width:25%;
+
+#features .feature {
+  width: 25%;
 }
 
 #features i {
@@ -254,9 +263,13 @@ p {
 }
 
 /* about page css */
-.img-fluid {
-  padding-left: 4rem;
+#about .img-fluid {
   width: 25%;
+}
+
+#about .img-bx {
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 
@@ -310,46 +323,47 @@ p {
 
 /* ==========================================contact page ======================================= */
 
-#contact{
+#contact {
   text-align: center;
-  padding:2rem;
-  width:50%;
+  padding: 2rem;
+  width: 50%;
   margin: 4rem auto;
   border-radius: 4px;
   box-shadow: 0 0 2px 0 #333;
-  background: rgba(255,224,117,0.1);
+  background: rgba(255, 224, 117, 0.1);
   backdrop-filter: saturate(180%) blur(10px);
 }
 
 
-#contact .form-group  input,
-#contact .form-group  select,
-#contact .form-group  textarea{
-  padding:10px 12px;
-  width:95%;
+#contact .form-group input,
+#contact .form-group select,
+#contact .form-group textarea {
+  padding: 10px 12px;
+  width: 95%;
   border-radius: 4px;
-  border:none;
+  border: none;
   box-shadow: 0 0 2px 0 #333;
   margin-bottom: 1rem;
 }
 
-#contact .form-group  input:active,
-#contact .form-group  input:focus,
-#contact .form-group  textarea:active,
-#contact .form-group  textarea:focus{
-  outline:none;
-}
-#contact .form-group  select{
-  width:99%;
+#contact .form-group input:active,
+#contact .form-group input:focus,
+#contact .form-group textarea:active,
+#contact .form-group textarea:focus {
+  outline: none;
 }
 
-#contact button{
-  width:99%;
-  border-radius:4px;
+#contact .form-group select {
+  width: 99%;
+}
+
+#contact button {
+  width: 99%;
+  border-radius: 4px;
   border-color: transparent;
   background-color: #01a4a2;
-  padding:10px 12px;
-  color:#fff;
+  padding: 10px 12px;
+  color: #fff;
 }
 
 
@@ -357,8 +371,8 @@ p {
 
 
 /* fixed button */
-.top{
-  height:50px;
+.top {
+  height: 50px;
   width: 50px;
   border-radius: 50%;
   box-shadow: 0 0 4px 0 #000;
@@ -366,13 +380,14 @@ p {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom:50px;
-  right:50px;
-  background: rgba(0,0,0,0.1);
+  bottom: 50px;
+  right: 50px;
+  background: rgba(0, 0, 0, 0.1);
   backdrop-filter: saturate(180%) blur(10px);
 }
-.top a{
-  color:#000;
+
+.top a {
+  color: #000;
 }
 
 
@@ -385,58 +400,91 @@ p {
 /* media queries */
 
 @media (max-width:768px) {
-  body{
-text-align: center;
+  body {
+    text-align: center;
   }
 
-  .top{
+  .top {
     display: none;
   }
 
-  .nav{
+  .nav {
     display: none;
   }
 
-  .container{
-  padding: 2rem;
- }
+  .container {
+    padding: 2rem;
+  }
 
- #header {
-  height: auto;
- }
+  #header {
+    height: auto;
+  }
 
- #header #main{
-  padding:2rem;
-  flex-direction: column;
- }
- #header #main .content-bx,
- #header #main .img-bx{
-width:100%;
- }
- #header #main .img-bx img{
-  margin-top: 2rem;
-transform: rotate(0);
-position: static;
- }
+  #header #main {
+    padding: 2rem;
+    flex-direction: column;
+  }
 
+  #header #main .content-bx,
+  #header #main .img-bx {
+    width: 100%;
+  }
 
-
- #features{
-  flex-direction: column;
- }
- #features .feature{
-  width:100%;
-  margin-bottom: 1rem;
-}
+  #header #main .img-bx img {
+    margin-top: 2rem;
+    transform: rotate(0);
+    position: static;
+  }
 
 
-#pricing_section .row{
-  flex-direction: column;
-}
-#pricing_section .row .card{
-  width:100%;
-  margin-bottom: 2rem;
- }
 
+  #features {
+    flex-direction: column;
+  }
+
+  #features .feature {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+
+
+  #pricing_section .row {
+    flex-direction: column;
+  }
+
+  #pricing_section .row .card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* contact page */
+  #contact{
+    width:auto;
+    margin:2rem;
+  }
+
+  #contact .form-group input,
+#contact .form-group textarea {
+  width:89%;
+  }
+  #contact .form-group select{
+    width:100%;
+  }
   
+
+
+  /* about page */
+  #main{
+    padding:2rem;
+  }
+  
+  #about {
+    padding:2rem 2rem 0;
+  }
+  #about img{
+    padding:0;
+  }
+
+
 }
